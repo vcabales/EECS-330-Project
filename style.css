@@ -1,0 +1,28 @@
+/* incrementation buttons need imported documentation */
+
+body {
+  background-color: #E0FFFF
+}
+
+.timer-block {
+  float: right;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+}
+
+.figure {
+    position: relative;
+    height: 110px;
+    width: 100px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 8px; 
+    @include box-shadow(0 3px 4px 0 rgba(0, 0, 0, .2),inset 2px 4px 0 0 rgba(255, 255, 255, .08)); }
+#set {
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
