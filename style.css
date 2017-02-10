@@ -1,4 +1,3 @@
-
 body {
   background-color: #E0FFFF;
  font-family: "Arial", san-serif;
@@ -44,6 +43,20 @@ body {
   display: flex;
   justify-content: center;
 }
+
+form{
+    margin: 0 auto; 
+    width:250px;
+  
+}
+
+input{
+  background-color:#FFF;
+  height: 15px;
+  width: 200px;
+}
+
+
 
 .figure {
     position: relative;
