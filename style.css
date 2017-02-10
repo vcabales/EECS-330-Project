@@ -117,3 +117,33 @@ h1 {
   text-align: center;
 }
 
+/*About Page CSS*/
+
+.blank_fix{
+  visibility:hidden;
+  width:240px;
+  height:180px;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+.our_beautiful_images{
+  position:relative;
+  width:800px;
+}
+
+img {
+    margin: auto;
+    width: 50%;
+    border: 2px solid black;
+    padding: 4px;
+    width:180px;
+    height:180px
+}
+.names_container{
+  position:relative;
+}
+
