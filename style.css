@@ -51,15 +51,18 @@ body {
     text-align: center;
     @include box-shadow(0 3px 4px 0 rgba(0, 0, 0, .2),inset 2px 4px 0 0 rgba(255, 255, 255, .08)); }
 
-#set {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
+.timerButton {
     width: 100px;
     height: 40px;
     margin-top: -20px;
     font-size: 18px;
     font-family: 'Rajdhani', sans-serif;
+  margin: 5px;
+}
+
+#buttons {
+  display: table;
+  margin: auto;
 }
 
 .unit-timer {
