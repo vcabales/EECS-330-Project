@@ -60,6 +60,25 @@ body {
   margin: 5px;
 }
 
+.sitesButton{
+
+	width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-left: 475px;
+
+}
+
+
+#SitesTab{
+
+font-family: 'Rajdhani', sans-serif;
+margin-left: 150px;
+
+}
+
 #buttons {
   display: table;
   margin: auto;
