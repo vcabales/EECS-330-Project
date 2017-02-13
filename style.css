@@ -7,7 +7,7 @@ h1,p {
 }
 
 p {
-  font-size: 30px;
+  font-size: 15px;
 }
 
 #top {
@@ -173,16 +173,11 @@ li a:active { /*change color when hovering on page */
 
 /*About Page CSS*/
 
-.blank_fix{
-  visibility:hidden;
-  width:240px;
-  height:180px;
-  
-}
-
 .our_beautiful_images{
   position:relative;
   width:800px;
+  padding-top:25px;
+  padding-right:100px;
 }
 
 img {
@@ -193,6 +188,8 @@ img {
     width:180px;
     height:180px
 }
+
+
 .names_container{
   position:relative;
 }
@@ -202,4 +199,6 @@ img {
   margin-right: 0.5%;
   color: #D4AF37;
 }
+
+
 
