@@ -180,16 +180,15 @@ li a:active { /*change color when hovering on page */
   padding-right:100px;
 }
 
-img {
+
+img{
     margin: auto;
     width: 50%;
-    border: 2px solid black;
-    padding: 4px;
+    border: 2px solid #483D8B;
+    padding: 4px; 
     width:180px;
-    height:180px
+    height:180px;
 }
-
-
 .names_container{
   position:relative;
 }
@@ -200,5 +199,26 @@ img {
   color: #D4AF37;
 }
 
+#change-style{
+  position:relative;
+  margin-left:750px;
+  font-weight: bold;
+    font-size: 18px;
+    color: #483D8B;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+#view-chart{
+  position:absolute;
+  margin-left: 200px;
+  border:none;
+  height: 350px;
+  width: 400px;
+}
 
-
+#future-table{
+  position:absolute;
+  margin-left: 950px;
+  top: 500px: 
+}
