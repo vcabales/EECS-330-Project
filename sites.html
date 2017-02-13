@@ -34,43 +34,43 @@
       
       <h1 align = center>List of Tracked Sites</h1>
       
-      <div align = center>In the boxes below, list the sites you wish to tracked during the session.</div>
+      <div id = "sitesdescription" align = center>In the boxes below, list the sites you wish to track. <br> Every time you start a new session, the application will track your activity from the following sites.</div>
    
-      <br> 
+   <div id = "urlinput">
       <form action="urlinput.php">
-  URL:
-  <input type="text" name="example" value="www.example.com">
-  <br><br><br>
+      <br>
+
+   URL:
+   <input type="text" name="example" value="www.example.com">
+   <br><br>
 
         <div id = "user_input">
-  <input  type="text" name="site 1" value= "">
+  URL: <input  type="text" name="site 1" value= "">
   <br><br>
         </div> 
         
           <div id = "user_input">
-  <input  type="text" name="site 2" value= "">
+  URL: <input  type="text" name="site 2" value= "">
   <br><br>
         </div> 
         
           <div id = "user_input">
-  <input  type="text" name="site 3" value= "">
+  URL: <input  type="text" name="site 3" value= "">
   <br><br>
         </div> 
         
           <div id = "user_input">
-  <input  type="text" name="site 4" value= "">
+  URL: <input  type="text" name="site 4" value= "">
   <br><br>
         </div> 
-        
         
 </form> 
-
-<div=id="start-time">
-<button id="set" 
-        onclick="alert('Function disabled at the time current time')">Set</button>
 </div>
 
-<p align = center></p>
+<div id="sitesButton">
+<button class = "sitesButton">Set</button>
+</div>
+
       
     </div>
     
