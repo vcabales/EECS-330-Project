@@ -235,3 +235,14 @@ img{
   margin-left: 950px;
   top: 500px: 
 }
+
+.pie {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 2px solid #483D8B;
+  background: white;
+  position:absolute;
+  margin-left: 35%;
+  height: 350px;
+  width: 400px;
+}
