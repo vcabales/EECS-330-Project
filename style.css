@@ -92,6 +92,8 @@ margin-left: 150px;
 
 }
 
+
+
 #buttons {
   display: table;
   margin: auto;
@@ -214,6 +216,7 @@ img{
 
 #change-style{
   position:relative;
+  margin-top: 20px;
   margin-left:750px;
   font-weight: bold;
     font-size: 18px;
@@ -234,4 +237,26 @@ img{
   position:absolute;
   margin-left: 950px;
   top: 500px: 
+}
+
+
+#past-data{
+  position:absolute;
+  margin-top: 50px;
+  margin-left: 950px;
+  top: 500px: 
+}
+
+table {
+    font-family: 'Rajdhani', sans-serif;
+    border-collapse: collapse;
+    width: "250";
+}
+
+td, th {
+
+  font-family: 'Rajdhani', sans-serif;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
