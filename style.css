@@ -60,13 +60,26 @@ body {
   margin: 5px;
 }
 
-.sitesButton{
+.setsitesButton{
 
 	width: 100px;
     height: 40px;
-    margin-top: 25px;
+    margin-top: 5px;
     font-size: 18px;
     font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
+    margin-left: 475px;
+
+}
+
+.addsitesButton{
+
+	width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 15px;
     margin-left: 475px;
 
 }
