@@ -24,10 +24,40 @@
  <p><font face = "Rajdhani"><div id = "chartdescription" align = center>The chart below displays the data collected from your current session. <br> Click on the Change Chart Style button to toggle between the different chart types.</div></font></p>
 
 
-<div>
-<button id = "change-style" type="button">Change Chart Style</button>
 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Change Chart Style</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Pie Chart</a>
+    <a href="#">Bar Graph</a>
+    <a href="#">Histogram</a>
+  </div>
 </div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 
 
 <div>
@@ -46,19 +76,31 @@
   </tr>
 
   <tr>
-    <td>2/17/2017: 7:00 PM- 9:00 PM</td>
+    <td>
+<a href="#">
+      2/17/2017: 7:00 PM- 9:00 PM
+  </a>
+</td>
+    </tr>
+
+
+      <tr>
+    <td>
+<a href="#">
+    2/16/2017: 6:30 PM- 8:00 PM</a>
+    </td>
     </tr>
 
       <tr>
-    <td>2/16/2017: 6:30 PM- 8:00 PM</td>
+    <td>
+    <a href="#">2/15/2017: 4:00 PM- 9:00 PM</a>
+    </td>
     </tr>
 
       <tr>
-    <td>2/15/2017: 4:00 PM- 9:00 PM</td>
-    </tr>
-
-      <tr>
-    <td>2/14/2017: 2:15 PM- 5:00 PM</td>
+    <td>
+    <a href="#">2/14/2017: 2:15 PM- 5:00 PM </a>
+    </td>
     </tr>
 
 </table>
