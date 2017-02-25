@@ -92,6 +92,8 @@ margin-left: 150px;
 
 }
 
+
+
 #buttons {
   display: table;
   margin: auto;
@@ -214,6 +216,7 @@ img{
 
 #change-style{
   position:relative;
+  margin-top: 20px;
   margin-left:750px;
   font-weight: bold;
     font-size: 18px;
@@ -236,27 +239,28 @@ img{
   top: 500px: 
 }
 
-.pie {
-  border-radius: 50%;
-  background: white;
+#past-data{
   position:absolute;
-  border:none;
-  margin-left: 40%;
-  height: 250px;
-  width: 250px;
-
-  background-image:
-  linear-gradient(to right, transparent 50%, #483D8B 0);
+  margin-top: 50px;
+  margin-left: 950px;
+  top: 500px: 
 }
 
-.pie::before {
-  content: '';
-  display: block;
-  margin-left: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 50%;
-  background: #483D8B;
-  transform-origin: left;
-  transform: rotate(.1turn); 
-  /*rotates from 0 -> .5 turn
+table {
+    font-family: 'Rajdhani', sans-serif;
+    border-collapse: collapse;
+    width: "250";
+}
+
+td, th {
+
+  font-family: 'Rajdhani', sans-serif;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#chart_div{
+  position:absolute;
+  margin-left: 450px;
 }
