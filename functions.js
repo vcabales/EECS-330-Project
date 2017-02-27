@@ -19,6 +19,17 @@ window.onclick = function(event) {
   }
 }
 
+function setfunc(){
+  alert("Time is set!");
+}
+
+function resetfunc(){
+  alert("Reset Time!");
+}
+function cancelfunc(){
+  alert("Time is canceled!");
+}
+
 class StickyNavigation {
 	
 	constructor() {
