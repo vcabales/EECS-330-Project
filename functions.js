@@ -20,21 +20,21 @@ window.onclick = function(event) {
 }
 
 function setfunc(){
-  alert("Time is set!");
+  alert("Time Set");
 }
 
 function resetfunc(){
-  alert("Reset Time!");
+  alert("Time Reset");
 }
 function cancelfunc(){
-  alert("Time is canceled!");
+  alert("Time Canceled");
 }
 
 function applyfunc(){
-  alert("Changes are applied!");
+  alert("Changed have been applied.");
 }
 function addfunc(){
-  alert("Add another site!");
+  alert("Additional 'URL:' input-box created.");
 }
 
 class StickyNavigation {

@@ -62,9 +62,12 @@ Every time you start a new session, the application will track your activity fro
         </div> 
           <div id = "user_input">
   URL: <input  type="text" name="site 4" value= "">
-  <button onclick = "addfunc()">+</button><br><br>
-        </div>   
+        <button id = "hidden"></button><br>
+        </div>  
 </form> 
+        <div>
+        <button onclick = "addfunc()" id = "newsite">+</button>
+        </div>
 </div>
 <button onclick = "applyfunc()" id = "addsitesButton">Apply Changes</button>
 </div>    
