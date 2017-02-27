@@ -206,7 +206,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 95vh;
   position: relative;
   background: #eee;
   text-align: center;
@@ -293,8 +293,9 @@ a {
 @media (min-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {
-    font-size: 3rem;
-    margin-top: -50vh;
+    font-size: 5rem;
+    margin-top: -25vh;
+    /*Jurisdicts logo placement*/
   }
   .et-hero-tabs h3,
   .et-slide h3 {
