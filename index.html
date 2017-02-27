@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WorkZone</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<header class="et-header">
+	
+  <div class="et-header__left">
+		<a href="" class="et-header__logo">WorkZone</a>
+	</div>
+</header>
+
+<section class="et-hero-tabs">
+	<h1>WorkZone</h1>
+	<h3>Internet distraction tracker</h3>
+	<div class="et-hero-tabs-container">
+		<a class="et-hero-tab" href="#tab-es6">About</a>
+ 		<a class="et-hero-tab" href="#tab-flexbox">Manage Sites</a>
+ 		<a class="et-hero-tab" href="#tab-react">Set Timer</a>
+  	<a class="et-hero-tab" href="#tab-angular">View Chart</a>
+  	<a class="et-hero-tab" href="#tab-other">Past Data</a>
+  	<span class="et-hero-tab-slider"></span>
+  </div>
+</section>
+
+<main class="et-main">
+	<section class="et-slide" id="tab-es6">
+		<h1>About</h1>
+		<h3>Hi there! Our team name is CMSV, which stands for Carl Maxine Stacey Victoria.
+We made this application in order to inform users of the disproportionate 
+amount of time they may spend on unproductive websites such as Netflix, or Facebook. </h3>
+	</section>
+	<section class="et-slide" id="tab-flexbox">
+		<h1>Manage Sites</h1>
+    <h3>List of Tracked Sites</h3>
+		<p>In the boxes below, list the sites you wish to track. 
+      <br>
+Every time you start a new session, the application will track your activity from the following sites.</p>
+       <div id = "urlinput">
+      <form action="urlinput.php">
+      <br>
+   URL:
+   <input type="text" name="example" value="www.example.com">
+   <br><br>
+        <div id = "user_input">
+  URL: <input  type="text" name="site 1" value= "">
+  <br><br>
+        </div> 
+          <div id = "user_input">
+  URL: <input  type="text" name="site 2" value= "">
+  <br><br>
+        </div> 
+          <div id = "user_input">
+  URL: <input  type="text" name="site 3" value= "">
+  <br><br>
+        </div> 
+          <div id = "user_input">
+  URL: <input  type="text" name="site 4" value= "">
+  <br><br>
+        </div>   
+</form> 
+</div>
+<button id = "addsitesButton">Add New Site</button>
+</div>    
+	</section>
+	<section class="et-slide" id="tab-react">
+		<h1>Set Timer</h1>
+		<p>In the timer below, set the amount of time you wish to 
+track the sites listed on your Manage Sites tab.</p>
+    <div id="timer">
+<div class="timer-block"> <!-- style the div; this will be a block that contains the entire time unit -->
+  <input type="number" min="0" max="9" class="figure hours hours-1" value="0"></input>
+  <input type="number" min="0" max="9" class="figure hours hours-2" value="0"></input>
+  <div class="measurement">
+    <span class="unit-timer"><p>Hours</p></span>
+  </div>
+ </div>
+<h2 id="colon">:</h2>
+<div class="timer-block">
+  <input type="number" min="0" max="9" class="figure minutes minutes-1" value="0"></input>
+  <input type="text" class="figure minutes minutes-2" min="0" max="9" value="0"></input>
+  <div class="measurement">
+    <span class="unit-timer"><p>Minutes</p></span>
+  </div>
+</div>
+</div>
+
+<div id="buttons">
+  <button class="timerButton">Set</button>
+  <button class="timerButton">Reset</button>
+  <button class="timerButton">Cancel</button>
+</div>
+    
+    
+	</section>
+	<section class="et-slide" id="tab-angular">
+		<h1>View Chart</h1>
+		<h3>The chart below displays the data collected from your current session. 
+Click on the Change Chart Style button to toggle between the different chart types.</h3>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Change Chart Style</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Pie Chart</a>
+    <a href="#">Bar Graph</a>
+    <a href="#">Histogram</a>
+  </div>
+</div>
+    <div>
+<img id = "view-chart" src = "img/website.png" alt = "chart" align = center></img>
+<p id = "future-table"><em>Table Implementation </em></p>
+</div>
+
+<div>
+
+<table id = "past-data">
+
+<tr>
+      <th>Previous Sessions</th>
+  </tr>
+
+  <tr>
+    <td>
+<a href="#">
+      2/17/2017: 7:00 PM- 9:00 PM
+  </a>
+</td>
+    </tr>
+
+
+      <tr>
+    <td>
+<a href="#">
+    2/16/2017: 6:30 PM- 8:00 PM</a>
+    </td>
+    </tr>
+
+      <tr>
+    <td>
+    <a href="#">2/15/2017: 4:00 PM- 9:00 PM</a>
+    </td>
+    </tr>
+
+      <tr>
+    <td>
+    <a href="#">2/14/2017: 2:15 PM- 5:00 PM </a>
+    </td>
+    </tr>
+
+</table>
+
+</div>
+	</section>
+	<section class="et-slide" id="tab-other">
+		<h1>Past Data</h1>
+		<h3>I don't think we have this yet, but I know the people in our class suggested this lol</h3>
+	</section>
+</main>
+	<script src="functions.js"></script>
+</html>
