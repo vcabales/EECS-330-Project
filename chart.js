@@ -5,11 +5,10 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawDonutChart);
-      google.charts.setOnLoadCallback(drawDonutChart2);
       //google.charts.setOnLoadCallback(drawBarChart);
       //google.charts.setOnLoadCallback(drawHistogramChart);
 
-      
+
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
@@ -42,34 +41,6 @@
         chart.draw(data, options);
       }
 
-
-
-      function drawDonutChart2() {
-
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Site');
-        data.addColumn('number', 'Time (hours)');
-        data.addRows([
-          ['www.webassign.com', 2],
-          ['www.facebook.com', 1],
-          ['www.instagram.com', 2],
-          ['www.youtube.com', 9],
-        ]);
-
-        // Set chart options
-        var options = {'title':'Time Spent on Sites (Percentage)',
-                       'width':700,
-                       'height':400,
-                   		pieHole: 0.4,
-                   		backgroundColor: '#EEEEEE'
-
-                   	};
-
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('pie2'));
-        chart.draw(data, options);
-      }
 /*
 
       function drawBarChart() {
