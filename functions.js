@@ -31,10 +31,10 @@ function cancelfunc(){
 }
 
 function applyfunc(){
-  alert("Changes are applied!")
+  alert("Changes are applied!");
 }
 function addfunc(){
-  alert("Add another site!")
+  alert("Add another site!");
 }
 
 class StickyNavigation {
