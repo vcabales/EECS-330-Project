@@ -27,7 +27,7 @@
 #past-data{
   position:absolute;
   margin-top: 50px;
-  margin-left: 950px;
+  margin-left: -150px;
   top: 500px: 
 }
 
@@ -44,7 +44,6 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-
 
 
 
@@ -105,6 +104,17 @@ td, th {
 #timer {
   display: flex;
   justify-content: center;
+}
+
+#addsitesButton{
+
+   width: 150px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+  margin: 5px;
+
 }
 
 .figure {
