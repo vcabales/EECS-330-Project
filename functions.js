@@ -71,7 +71,7 @@ class StickyNavigation {
 	}
 	
 	checkHeaderPosition() {
-		const headerHeight = 75;
+		const headerHeight = 70;
 		if($(window).scrollTop() > headerHeight) {
 			$('.et-header').addClass('et-header--scrolled');
 		} else {

@@ -3,16 +3,13 @@
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawDonutChart);
-      //google.charts.setOnLoadCallback(drawBarChart);
-      //google.charts.setOnLoadCallback(drawHistogramChart);
+      // Set a callback to run when the Google Visualization API is loaded
 
-
+      function makePie(){
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
-      function drawDonutChart() {
+        function drawDonutChart() {
 
         // Create the data table.
         var data = new google.visualization.DataTable();
@@ -31,17 +28,19 @@
         var options = {'title':'Time Spent on Sites (Percentage)',
                        'width':700,
                        'height':400,
-                   		pieHole: 0.4,
-                   		backgroundColor: '#EEEEEE'
+                      pieHole: 0.4,
+                      backgroundColor: '#EEEEEE'
 
-                   	};
+                    };
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('pie'));
         chart.draw(data, options);
       }
+        google.charts.setOnLoadCallback(drawDonutChart);
+  }
 
-/*
+    function makeBar(){
 
       function drawBarChart() {
       	var data = google.visualization.arrayToDataTable([
@@ -79,9 +78,12 @@
         var chart = new google.visualization.BarChart(document.getElementById('bar'));
         chart.draw(data, options);
       }
-      */
+      google.charts.setOnLoadCallback(drawBarChart);
 
-      /*
+    }
+      
+    function makeHistogram(){
+
       function drawHistogramChart() {
       	var data = google.visualization.arrayToDataTable([
           ['Site', 'Time Spent (Percent)'],
@@ -98,6 +100,7 @@
           'width':700,
           'height':400,
           backgroundColor: '#EEEEEE',
+          
           hAxis:{
 			  title: 'Percentage Time Spent',
 			  titleTextStyle: {
@@ -114,9 +117,19 @@
 	      minValue: 0,
 	      maxValue: 40
     }
+    
         };
-
-        var chart = new google.visualization.Histogram(document.getElementById('histogram'));
+      
+        var chart =  new google.visualization.Histogram(document.getElementById('histogram'));
         chart.draw(data, options);
       }
-      */
+        google.charts.setOnLoadCallback(drawHistogramChart);
+      }
+      
+function clear_chart(){      
+  var currentDisplay = document.getElementByClassName("dropdown-content").getAttribute("value");
+  if (currentDisplay == 1){
+      google.charts.clearChart();
+  }
+  
+}

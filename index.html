@@ -108,10 +108,10 @@ track the sites listed on your Manage Sites tab.</p>
 Click on the Change Chart Style button to toggle between the different chart types.</h3>
     <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Change Chart Style</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href=" ">Pie Chart</a>
-    <a href=" ">Bar Graph</a>
-    <a href=" ">Histogram</a>
+  <div id="myDropdown" class="dropdown-content" onchange="clearDisplay()">
+    <a onclick = "makePie()" value = "1">Pie Chart</a>
+    <a onclick= "makeBar()" value = "1">Bar Graph</a>
+    <a onclick= "makeHistogram()" value = "1">Histogram</a>
   </div>
 </div>
     <div id = "pie">
@@ -159,13 +159,13 @@ Click on the Change Chart Style button to toggle between the different chart typ
 
       <tr>
     <td>
-    <a href="pastdata.html" target="_blank"> 2/15/2017: 4:00 PM- 9:00 PM</a>
+
     </td>
     </tr>
 
       <tr>
     <td>
-    <a href="pastdata.html" target="_blank">2/14/2017: 2:15 PM- 5:00 PM </a>
+    
     </td>
     </tr>
 
