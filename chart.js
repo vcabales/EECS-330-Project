@@ -2,8 +2,38 @@
 
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
-
+      google.charts.setOnLoadCallback(drawPieChart);
       // Set a callback to run when the Google Visualization API is loaded
+function drawPieChart() {
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Site');
+        data.addColumn('number', 'Time (hours)');
+        data.addRows([
+          ['www.webassign.com', 2],
+          ['www.facebook.com', 2],
+          ['www.reddit.com', 4],
+          ['www.gmail.com', 1],
+          ['www.instagram.com', 2],
+          ['www.youtube.com', 1],
+        ]);
+
+        // Set chart options
+        var options = {'title':'Time Spent on Sites (Percentage)',
+                       'width':700,
+                       'height':400,
+                      pieHole: 0.4,
+                      backgroundColor: '#EEEEEE'
+
+                    };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('pie'));
+        chart.draw(data, options);
+  
+      }
+
+
 
       function makePie(){
       document.getElementById('pie').style.display = 'inline';  
@@ -51,13 +81,13 @@
       
       function drawBarChart() {
       	var data = google.visualization.arrayToDataTable([
-          ['Site', { role: 'annotation' } ,'Time Spent (Percent)'],
-          ['www.webassign.com', "Webassign" ,16.67 ],
-          ['www.facebook.com', 'Facebook' ,16.67 ],
-          ['www.reddit.com', 'Reddit' ,33.33 ],
-          ['www.gmail.com', 'Gmail' ,8.33],
-          ['www.instagram.com', 'Instagram' ,16.67],
-          ['www.youtube.com', 'Youtube' ,8.33]
+          ['Site','Time Spent (Percent)'],
+          ['www.webassign.com', 16.67 ],
+          ['www.facebook.com', 16.67 ],
+          ['www.reddit.com',33.33 ],
+          ['www.gmail.com', 8.33],
+          ['www.instagram.com', 16.67],
+          ['www.youtube.com', 8.33]
           ]);
 
       	var options = {
