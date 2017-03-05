@@ -6,6 +6,10 @@
       // Set a callback to run when the Google Visualization API is loaded
 
       function makePie(){
+      document.getElementById('pie').style.display = 'inline';  
+      document.getElementById('histogram').style.display = 'none';
+      
+      document.getElementById('bar').style.display = 'none';
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
@@ -41,7 +45,10 @@
   }
 
     function makeBar(){
-
+       document.getElementById('bar').style.display = 'inline';
+       document.getElementById('histogram').style.display = 'none';
+      document.getElementById('pie').style.display = 'none';
+      
       function drawBarChart() {
       	var data = google.visualization.arrayToDataTable([
           ['Site', { role: 'annotation' } ,'Time Spent (Percent)'],
@@ -83,7 +90,9 @@
     }
       
     function makeHistogram(){
-
+      document.getElementById('histogram').style.display = 'inline';
+      document.getElementById('pie').style.display = 'none';
+      document.getElementById('bar').style.display = 'none';
       function drawHistogramChart() {
       	var data = google.visualization.arrayToDataTable([
           ['Site', 'Time Spent (Percent)'],
