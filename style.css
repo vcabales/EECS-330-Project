@@ -106,9 +106,20 @@ td, th {
   justify-content: center;
 }
 
+#newsite{
+
+width: 130px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+  margin: 5px;
+
+
+}
 #addsitesButton{
 
-   width: 150px;
+   width: 130px;
     height: 40px;
     margin-top: -20px;
     font-size: 15px;
