@@ -81,13 +81,13 @@ function drawPieChart() {
       
       function drawBarChart() {
       	var data = google.visualization.arrayToDataTable([
-          ['Site','Time Spent (Percent)'],
-          ['www.webassign.com', 16.67 ],
-          ['www.facebook.com', 16.67 ],
-          ['www.reddit.com',33.33 ],
-          ['www.gmail.com', 8.33],
-          ['www.instagram.com', 16.67],
-          ['www.youtube.com', 8.33]
+          ['Site','Time Spent (Percent)', { role: 'style' }],
+          ['www.webassign.com', 16.67, 'orange' ],
+          ['www.facebook.com', 16.67, 'red' ],
+          ['www.reddit.com',33.33, 'blue' ],
+          ['www.gmail.com', 8.33, 'purple'],
+          ['www.instagram.com', 16.67, 'green'],
+          ['www.youtube.com', 8.33, 'light blue']
           ]);
 
       	var options = {
@@ -141,7 +141,7 @@ function drawPieChart() {
           backgroundColor: '#EEEEEE',
           
           hAxis:{
-			  title: 'Percentage Time Spent',
+			  title: 'Percentage of Time on Site',
 			  titleTextStyle: {
 			    color: 'black'
 			  }
