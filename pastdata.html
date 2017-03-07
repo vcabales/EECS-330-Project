@@ -16,7 +16,18 @@
 </header>
 
 
+
 	<div class="et-slide" id="tab-other">
+
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Change Chart Style</button>
+  <div id="myDropdown" class="dropdown-content" onchange="clearDisplay()">
+    <a onclick = "makePie()" >Pie Chart</a>
+    <a onclick= "makeBar()" >Bar Graph</a>
+    <a onclick= "makeHistogram()" >Histogram</a>
+  </div>
+</div>
+
     <div id = "pie2"></div>
 
     
